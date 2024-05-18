@@ -6,7 +6,7 @@
 /*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 13:50:31 by bsantana          #+#    #+#             */
-/*   Updated: 2024/05/18 19:12:53 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/05/18 19:18:34 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ char	*ft_strjoin(char *s1, char *s2)
 	while (j <= s2_len)
 		result[i++] = s2[j++];
 	result[(s1_len + s2_len + 1)] = '\0';
-	free(s1);
 	s1 = NULL;
 	return (result);
 }
