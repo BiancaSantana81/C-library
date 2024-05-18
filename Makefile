@@ -6,7 +6,7 @@
 #    By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/18 18:22:28 by bsantana          #+#    #+#              #
-#    Updated: 2024/05/18 18:22:30 by bsantana         ###   ########.fr        #
+#    Updated: 2024/05/18 19:06:41 by bsantana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ FILES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strl
 		ft_strchr.c ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c  ft_strrncmp.c ft_strdup.c ft_atoi.c \
 		ft_calloc.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putnbr_fd.c ft_substr.c \
 		ft_itoa.c ft_strjoin.c ft_strtrim.c ft_strmapi.c ft_striteri.c ft_split.c  ft_free_matrix.c ft_atol.c \
-		ft_strstr.c get_next_line.c
+		ft_strstr.c get_next_line.c  gnl_utils.c ft_printf.c ft_printf_utils.c
 
 SRCS = $(addprefix $(SRC_DIR)/,$(FILES))
 OBJS = $(addprefix $(OBJ_DIR)/,$(FILES:.c=.o))

@@ -6,7 +6,7 @@
 /*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 12:13:54 by bsantana          #+#    #+#             */
-/*   Updated: 2024/05/18 17:40:17 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/05/18 19:06:23 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,15 @@
 # include <stdlib.h>
 # include <limits.h>
 # include <unistd.h>
+# include <stdarg.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 10
 # endif
+
+# define DECIMAL_BASE "0123456789"
+# define HEXA_UPPER_BASE "0123456789ABCDEF"
+# define HEXA_LOWER_BASE "0123456789abcdef"
 
 int		    ft_isalpha(int c);
 int		    ft_isdigit(int c);
@@ -67,5 +72,15 @@ char	*remaining(char *str);
 void	check_bytes_read(ssize_t bytes_read, char **line);
 char	*get_next_line(int fd);
 size_t	find_n(const char *str);
+char	*concatenate_characters(char *s1, char *s2);
+
+// SIMPLE PRINTF
+
+int		ft_printf(const char *type_format, ...);
+int		ft_flags(char flag, va_list args);
+int		ft_putchar(char c);
+int     ft_putstr(char *s);
+int     ft_putnbase(long long n, char *base);
+int     ft_pointer(unsigned long long n, char *base);
 
 #endif
