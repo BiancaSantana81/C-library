@@ -1,4 +1,4 @@
-# Libft 📚
+# C-library 📚
 
 Este repositório contém a versão atualizada da minha libft, originalmente criada como meu projeto inicial na 42SãoPaulo. Nesta atualização, adicionei novas funcionalidades e melhorias à biblioteca.
 
