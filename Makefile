@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+         #
+#    By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/18 18:22:28 by bsantana          #+#    #+#              #
-#    Updated: 2024/05/18 19:06:41 by bsantana         ###   ########.fr        #
+#    Updated: 2024/07/25 17:36:50 by bsantana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ FILES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strl
 		ft_memset.c  ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c \
 		ft_strchr.c ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c  ft_strrncmp.c ft_strdup.c ft_atoi.c \
 		ft_calloc.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putnbr_fd.c ft_substr.c \
-		ft_itoa.c ft_strjoin.c ft_strtrim.c ft_strmapi.c ft_striteri.c ft_split.c  ft_free_matrix.c ft_atol.c \
+		ft_itoa.c ft_strjoin.c ft_strtrim.c ft_strmapi.c ft_striteri.c ft_split.c  ft_free_matrix.c ft_print_matrix.c ft_atol.c \
 		ft_strstr.c get_next_line.c  gnl_utils.c ft_printf.c ft_printf_utils.c
 
 SRCS = $(addprefix $(SRC_DIR)/,$(FILES))
@@ -49,7 +49,7 @@ clean:
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "$(WHITE) 🫧🫧  Cleaning  $(NAME) completed! 🫧🫧"
+	@echo "$(WHITE) 🗑️  Cleaning  $(NAME) completed! 🗑️"
 
 re: fclean all
 

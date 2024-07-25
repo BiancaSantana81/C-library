@@ -1,40 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_print_matrix.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/03 13:50:31 by bsantana          #+#    #+#             */
-/*   Updated: 2024/07/25 17:31:48 by bsantana         ###   ########.fr       */
+/*   Created: 2024/07/25 17:32:51 by bsantana          #+#    #+#             */
+/*   Updated: 2024/07/25 17:34:36 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char *s1, char *s2)
+void	ft_print_matrix(char **matrix)
 {
-	char		*result;
-	size_t		i;
-	size_t		j;
-	size_t		s1_len;
-	size_t		s2_len;
+	int	i;
+	int	j;
 
 	i = 0;
-	j = 0;
-	s1_len = ft_strlen(s1);
-	s2_len = ft_strlen(s2);
-	result = malloc (((s1_len + s2_len + 1)) + 1 * sizeof(char));
-	if (!result)
-		return (NULL);
-	while (i < s1_len)
+	while (matrix[i])
 	{
-		result[i] = s1[i];
+		j = 0;
+		while (matrix[i][j])
+		{
+			write(1, &matrix[i][j], 1);
+			j++;
+		}
 		i++;
 	}
-	while (j <= s2_len)
-		result[i++] = s2[j++];
-	result[(s1_len + s2_len + 1)] = '\0';
-	s1 = NULL;
-	return (result);
 }

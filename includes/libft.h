@@ -6,7 +6,7 @@
 /*   By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 12:13:54 by bsantana          #+#    #+#             */
-/*   Updated: 2024/07/24 14:19:12 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/07/25 17:34:59 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ void		ft_putendl_fd(char *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 void		ft_putnbr_fd(int n, int fd);
 void		ft_striteri(char *s, void (*f)(unsigned int, char*));
+void		ft_print_matrix(char **matrix);
 void		free_matrix(char **matrix);
 
 // get_next_line funcions
