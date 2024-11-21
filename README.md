@@ -1,12 +1,11 @@
 # C-library 📚
 
-Este repositório contém a versão atualizada da minha libft, originalmente criada como meu projeto inicial na 42SãoPaulo. Nesta atualização, adicionei novas funcionalidades e melhorias à biblioteca.
+This repository contains the updated version of my libft, originally created as my first project at 42SãoPaulo. In this update, I’ve added new features and improvements to the library.
 
-# Novas Funcionalidades:
+# New Features:
+- Utility functions to facilitate the development of future projects.
+- Improvements to existing functions, with performance optimizations and bug fixes.
+- Enhanced Makefile to support new features and improve compilation efficiency.
 
-- funções utilitárias para facilitar o desenvolvimento de projetos futuros;
-- melhorias nas funções existentes, com otimizações de desempenho e correções de bugs;
-- Makefile aprimorado para suportar novas funcionalidades e melhorar a eficiência da compilação.
-
-# Updates
-Esta biblioteca está em constante evolução conforme encontro melhorias e faço mais projetos. Continuarei a aprimorá-la e a adicionar novas funcionalidades à medida que avanços forem necessários e novas demandas surgirem.
+# Updates: 
+This library is continuously evolving as I find improvements and work on more projects. I will keep refining it and adding new features as needed and new requirements arise.
